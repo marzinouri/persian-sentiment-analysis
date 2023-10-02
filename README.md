@@ -29,6 +29,32 @@ Before fine-tuning the model, the dataset has undergone several preprocessing st
 
 ParsBERT, a pre-trained transformer-based model for Persian text, has been fine-tuned for sentiment analysis using the preprocessed dataset. A total of 18 experiments have been performed on three different dataset versions. The best result was achieved on the downsampled dataset, with an F1 score of 0.735.
 
+### Experiment Details
+
+| #  | Dataset Type   | Num of Epochs | Learning Rate | Batch Size | F1 Score |
+|----|----------------|---------------|---------------|------------|----------|
+| 1  | Downsampled    | 3             | 1e-5          | 16         | 0.735    |
+| 2  | Downsampled    | 5             | 1e-5          | 16         | 0.690    |
+| 3  | Downsampled    | 7             | 1e-5          | 16         | 0.637    |
+| 4  | Downsampled    | 3             | 2e-5          | 16         | 0.676    |
+| 5  | Downsampled    | 5             | 2e-5          | 16         | 0.651    |
+| 6  | Downsampled    | 7             | 2e-5          | 16         | 0.592    |
+| 7  | Upsampled      | 3             | 1e-5          | 16         | 0.660    |
+| 8  | Upsampled      | 5             | 1e-5          | 16         | 0.633    |
+| 9  | Upsampled      | 7             | 1e-5          | 16         | 0.693    |
+| 10 | Upsampled      | 3             | 2e-5          | 16         | 0.673    |
+| 11 | Upsampled      | 5             | 2e-5          | 16         | 0.626    |
+| 12 | Upsampled      | 7             | 2e-5          | 16         | 0.589    |
+| 13 | Original       | 3             | 1e-5          | 16         | 0.640    |
+| 14 | Original       | 5             | 1e-5          | 16         | 0.578    |
+| 15 | Original       | 7             | 1e-5          | 16         | 0.694    |
+| 16 | Original       | 3             | 2e-5          | 16         | 0.607    |
+| 17 | Original       | 5             | 2e-5          | 16         | 0.669    |
+| 18 | Original       | 7             | 2e-5          | 16         | 0.685    |
+
+
+The best result was achieved on the downsampled dataset (#1 experiment) with 3 epochs, a learning rate of 1e-5, and a batch size of 16, resulting in an F1 score of 0.735.
+
 ## Files
 
 - `back_trans_fa_en_fa.json`: Upsampled data with back translation technique.
