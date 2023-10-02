@@ -27,16 +27,12 @@ Before fine-tuning the model, the dataset has undergone several preprocessing st
 
 ## Fine-Tuning ParsBERT
 
-ParsBERT, a pre-trained transformer-based model for Persian text, has been fine-tuned for sentiment analysis using the preprocessed dataset. A total of 18 experiments have been performed on three different dataset versions, as detailed in the project report (in Persian). The best result was achieved on the downsampled dataset, with an F1 score of 0.735.
+ParsBERT, a pre-trained transformer-based model for Persian text, has been fine-tuned for sentiment analysis using the preprocessed dataset. A total of 18 experiments have been performed on three different dataset versions. The best result was achieved on the downsampled dataset, with an F1 score of 0.735.
 
 ## Files
 
 - `back_trans_fa_en_fa.json`: Upsampled data with back translation technique.
 - `down_sampled.json`: Downsampled data.
 - `dataset_annotated_sentiment.json`: Original annotated data.
-- `downsampled-minimalReportIncluded.ipynb`: Jupyter Notebook containing code for fine-tuning ParsBERT on the downsampled dataset, including a minimal report.
+- `downsampled-minimalReportIncluded.ipynb`: Jupyter Notebook containing code for fine-tuning ParsBERT on the downsampled dataset, including a minimal report in Persian.
 - `upsampled.ipynb`: Jupyter Notebook containing code for fine-tuning ParsBERT on the upsampled dataset.
-
-## Report (in Persian)
-
-For detailed information about the experiments, results, and analysis, please refer to the project report provided in Persian. The report contains comprehensive insights into the project's methodology and findings.
